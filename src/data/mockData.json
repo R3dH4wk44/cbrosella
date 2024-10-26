@@ -1,0 +1,24 @@
+{
+    "results": [
+        {
+            "date": "2024-10-01",
+            "opponent": "Team A",
+            "score": "75-60"
+        },
+        {
+            "date": "2024-10-02",
+            "opponent": "Team B",
+            "score": "80-75"
+        }
+    ],
+    "news": [
+        {
+            "title": "Match Highlights",
+            "content": "Check out the highlights from the match against Team A."
+        },
+        {
+            "title": "Player of the Match",
+            "content": "Congratulations to Player X for their outstanding performance!"
+        }
+    ]
+}

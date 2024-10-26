@@ -1,0 +1,130 @@
+---
+import Image from 'astro/components/Image.astro';
+import LogoRosella from '../img/logoRosella.png';
+---
+<div class="py-2 px-5 text-end w-full bg-redAlert hidden lg:block">
+    <ul class="flex flex-row lg:justify-end justify-center gap-10 md:text-lg text-sm">
+        <li class="relative text-backgroundColor"> <a href="https://www.instagram.com/cbrosella/" rel='noreferrer' target="_blank" class="flex flex-row gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.323 3.608 1.298.975.975 1.236 2.242 1.298 3.608.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.07 4.849-.062 1.366-.323 2.633-1.298 3.608-.975.975-2.242 1.236-3.608 1.298-1.265.058-1.645.07-4.849.07-3.204 0-3.584-.012-4.849-.07-1.366-.062-2.633-.323-3.608-1.298-.975-.975-1.236-2.242-1.298-3.608-.058-1.265-.07-1.645-.07-4.849 0-3.204.012-3.584.07-4.849.062-1.366.323-2.633 1.298-3.608.975-.975 2.242-1.236 3.608-1.298 1.265-.058 1.645-.07 4.849-.07zm0-2.163C8.756 0 8.322.014 7.052.072 5.758.13 4.508.389 3.444 1.454 2.379 2.519 2.12 3.769 2.062 5.064.004 6.334 0 7.768 0 12s.014 5.667.072 7.052c.058 1.295.317 2.545 1.382 3.61 1.065 1.065 2.315 1.324 3.61 1.382C8.322 24 8.756 24 12 24s3.678-.014 5.948-.072c1.295-.058 2.545-.317 3.61-1.382 1.065-1.065 1.324-2.315 1.382-3.61C24 17.678 24 17.244 24 12s-.014-3.678-.072-5.948c-.058-1.295-.317-2.545-1.382-3.61C20.553.389 19.303.13 18.008.072 16.678.014 16.244 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+          </svg>
+          @cbrosella</a></li>
+        <li class="relative text-backgroundColor"> 
+            <a href="https://www.youtube.com/channel/UCKtabjfhGLmM7ifdeT3bNHw" target="_blank" rel='noreferrer' class="flex flex-row gap-2 items-center"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                    <path d="M23.499 6.203a2.984 2.984 0 0 0-2.099-2.112C19.63 3.554 12 3.554 12 3.554s-7.63 0-9.4.537a2.985 2.985 0 0 0-2.099 2.112A31.204 31.204 0 0 0 0 12c0 1.654.127 3.267.401 4.844a2.985 2.985 0 0 0 2.099 2.112c1.77.537 9.4.537 9.4.537s7.63 0 9.4-.537a2.985 2.985 0 0 0 2.099-2.112A31.199 31.199 0 0 0 24 12c0-1.654-.127-3.267-.501-4.844zm-13.758 7.243v-5.89l5.736 2.947-5.736 2.943z"/>
+                </svg>
+                C. B. Rosella
+            </a>
+        </li>
+        <li class="relative text-backgroundColor"> <a href="https://www.instagram.com/campusebrosella/" target="_blank" rel='noreferrer' class="lg:flex lg:flex-row hidden gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.323 3.608 1.298.975.975 1.236 2.242 1.298 3.608.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.07 4.849-.062 1.366-.323 2.633-1.298 3.608-.975.975-2.242 1.236-3.608 1.298-1.265.058-1.645.07-4.849.07-3.204 0-3.584-.012-4.849-.07-1.366-.062-2.633-.323-3.608-1.298-.975-.975-1.236-2.242-1.298-3.608-.058-1.265-.07-1.645-.07-4.849 0-3.204.012-3.584.07-4.849.062-1.366.323-2.633 1.298-3.608.975-.975 2.242-1.236 3.608-1.298 1.265-.058 1.645-.07 4.849-.07zm0-2.163C8.756 0 8.322.014 7.052.072 5.758.13 4.508.389 3.444 1.454 2.379 2.519 2.12 3.769 2.062 5.064.004 6.334 0 7.768 0 12s.014 5.667.072 7.052c.058 1.295.317 2.545 1.382 3.61 1.065 1.065 2.315 1.324 3.61 1.382C8.322 24 8.756 24 12 24s3.678-.014 5.948-.072c1.295-.058 2.545-.317 3.61-1.382 1.065-1.065 1.324-2.315 1.382-3.61C24 17.678 24 17.244 24 12s-.014-3.678-.072-5.948c-.058-1.295-.317-2.545-1.382-3.61C20.553.389 19.303.13 18.008.072 16.678.014 16.244 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+          </svg>
+          @campusebrosella</a></li>
+
+    </ul>
+</div>
+<header class="px-5 py-1 bg-backgroundColor font-semibold text-xl text-blackBackgroundColor flex flex-row justify-between items-center w-screen shadow-lg sticky top-0">
+    
+    <div>
+        <Image loading={'eager'} src={LogoRosella} alt="Logo del cbrosella" height="100" width="100" class="scale-75 lg:scale-100 duration-150">
+    </div>
+    <ul class="lg:flex flex-row justify-between font-medium gap-10 hidden ">
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/qui-som">Qui Som?</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/noticies">Noticies</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/equips">Equips</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/3x3">3x3</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/campus">Campus</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="group relative hover:scale-110 hover:-translate-y-1 hover:text-redAlert duration-150 ease-in-out">
+            <a href="/contacte">Contacte</a>
+            <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-redAlert transition-all duration-300 group-hover:w-full"></span>
+        </li>
+    </ul>
+    <div class="lg:flex justify-between gap-5 hidden">
+        <button class="px-5 py-2 bg-redAlert text-backgroundColor hover:-translate-y-1 duration-100 rounded-md">Tenda</button>
+    </div>
+
+    <div class="hamburguer_button_container lg:hidden">
+        <button class="hover:text-redAlert hover:scale-110 duration-150" id="hamburguer_button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="30" fill="currentColor">
+              <path d="M3 6h18c.552 0 1-.448 1-1s-.448-1-1-1H3C2.448 4 2 4.448 2 5s.448 1 1 1zm0 7h18c.552 0 1-.448 1-1s-.448-1-1-1H3c-.552 0-1 .448-1 1s.448 1 1 1zm0 7h18c.552 0 1-.448 1-1s-.448-1-1-1H3c-.552 0-1 .448-1 1s.448 1 1 1z"/>
+            </svg>
+          </button>
+
+    </div>
+</header>
+<div class="w-full bg-backgroundColor text-blackBackgroundColor flex-col items-center justify-center hidden transition-opacity opacity-0 duration-500" id="dropdown_header_menu">
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="/qui-som">Qui Som?</a>
+    </div>
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="/noticies">Notícies</a>
+    </div>
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="/equips">Equips</a>
+    </div>
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="3x3">3x3</a>
+    </div>
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="/campus">Campus</a>
+    </div>
+    <div class="p-2 border-b-2 relative w-full text-center hover:bg-slate-100 hover:text-redAlert duration-150">
+        <a href="/contacte">Contacte</a>
+    </div>
+    
+</div>
+
+<script>
+    let hamburgerButton = document.querySelector('#hamburguer_button');
+    let dropdownMenu = document.querySelector('#dropdown_header_menu');
+    window.addEventListener("scroll", () => {
+        if(window.scrollY === 0) {
+            dropdownMenu?.classList.add("dropdown_on_top");
+            dropdownMenu?.classList.remove("dropdown_down");
+        }
+        else{
+            dropdownMenu?.classList.remove("dropdown_on_top");
+            dropdownMenu?.classList.add("dropdown_down");
+        }
+    })
+    hamburgerButton?.addEventListener('click', () => {
+        
+        dropdownMenu?.classList.toggle('hidden');
+        if (!dropdownMenu?.classList.contains('hidden')) {
+            dropdownMenu?.classList.remove('opacity-0');
+            dropdownMenu?.classList.add('opacity-100');
+        } else {
+            dropdownMenu.classList.remove('opacity-100');
+            dropdownMenu.classList.add('opacity-0');
+        }
+    })
+</script>
+
+<style>
+    #dropdown_header_menu {
+        position: fixed;
+        
+        left: 0;
+    }
+    .dropdown_on_top {
+        top: 10rem;
+    }
+    .dropdown_down {
+        top:6.5rem;
+    }
+</style>
