@@ -1,14 +1,21 @@
 {
     "results": [
         {
+            "local": false,
+            "equip": "Junior Fem. Negre",
             "date": "2024-10-01",
-            "opponent": "Team A",
-            "score": "75-60"
+            "opponent": "CB Cerdanyola al dia B",
+            "scoreEquip": "75",
+            "scoreOpponent": "69"
+
         },
         {
+            "local": true,
+            "equip": "Motowrapping CB Rosella Senior Masculí",
             "date": "2024-10-02",
-            "opponent": "Team B",
-            "score": "80-75"
+            "opponent": "C.B Viladecavalls",
+            "scoreEquip": "140",
+            "scoreOpponent": "24"
         }
     ],
     "news": [

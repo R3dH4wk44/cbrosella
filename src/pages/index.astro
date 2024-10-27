@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Image from 'astro/components/Image.astro';
 import CartellBenvinguda from '../img/Cartell-benvinguda.webp';
 import FeedNoticias from '../components/feedNoticias.jsx';
-
+import FeedResultats from '../components/feedResultats.jsx';
 import mockData from '../data/mockData.json';
 
 const results = mockData.results;
@@ -16,13 +16,20 @@ console.log(news.toString());
 		<Image loading={'eager'} src={CartellBenvinguda} alt={"Cartell de benvinguda a la web"} height={600}/>{console.log(news)}
 	</div>
 	<section class="container mx-auto px-4 lg:px-6">
-		<h1 class=" text-4xl font-semibold">Últimes <span class=" text-redAlert">Notícies</span></h1>
-		<FeedNoticias client:load news={news}></FeedNoticias>
+		<h1 class=" text-4xl font-semibold">Últims <span class=" text-redAlert">Resultatas</span></h1>
+		<FeedResultats client:load results={results}></FeedResultats>
 	</section>
 	<section class=" bg-gradient-to-b from-white from-0% via-slate-950 via-[3%] to-slate-950 shadow-md ">
+		<section class="container mx-auto px-4 lg:px-6 py-10 text-white">
+			<h1 class=" text-4xl font-semibold">Últimes <span class=" text-redAlert">Notícies</span></h1>
+			<FeedNoticias client:load news={news}></FeedNoticias>
+		</section>
 		<div class="mx-auto container px-4 py-10 lg:px-6">
 			<h1 class=" text-4xl font-semibold text-white">Últims <span class=" text-redAlert">Vídeos</span></h1>
-			<!--EMBBEDED VIDEO -->
+			<div class="conatiner flex gap-10 mx-auto flex-wrap mt-10 mb-10 px-4 lg:px-6">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/bEcLB7OD9oU?si=DWYkzDhxnwQyjLCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ORGOZuem6r0?si=gDJ9MERIESugZ3zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 </Layout>
