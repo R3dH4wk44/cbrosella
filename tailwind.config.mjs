@@ -7,8 +7,16 @@ export default {
 				backgroundColor: '#FCFCFC',
 				blackBackgroundColor: '#1F271B',
 				redAlert: '#FF1715',
-				
-			}
+			},
+			keyframes: {
+				slide: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' },
+				},
+			},
+			animation: {
+				slide: 'slide 15s linear infinite',
+			},
 		},
 	},
 	plugins: [],

@@ -5,35 +5,152 @@ import CartellBenvinguda from '../img/Cartell-benvinguda.webp';
 import FeedNoticias from '../components/feedNoticias.jsx';
 import FeedResultats from '../components/feedResultats.jsx';
 import mockData from '../data/mockData.json';
-
+import QuiSom from '../img/3x3-quisom-prov.webp'
 const results = mockData.results;
 const news = mockData.news;
-console.log(news.toString());
+console.log(news.toString());				
 ---
 
 <Layout title="CB Rosella - Inici">
-	<div class="flex justify-center cartell w-screen mx-auto px-4 lg:px-6">
+	<div class="flex justify-center cartell w-screen mx-auto px-4 lg:px-6 py-16">
 		<Image loading={'eager'} src={CartellBenvinguda} alt={"Cartell de benvinguda a la web"} height={600}/>{console.log(news)}
 	</div>
 	<section class="container mx-auto px-4 lg:px-6">
-		<h1 class=" text-4xl font-semibold">Últims <span class=" text-redAlert">Resultatas</span></h1>
+		<h2 class=" text-4xl font-semibold">Últims <span class=" text-redAlert">Resultatas</span></h2>
 		<FeedResultats client:load results={results}></FeedResultats>
 	</section>
-	<section class=" bg-gradient-to-b from-white from-0% via-slate-950 via-[3%] to-slate-950 shadow-md ">
+	<section class=" bg-gradient-to-b from-white from-0% via-slate-950 via-[3%] to-slate-950 shadow-md py-16">
 		<section class="container mx-auto px-4 lg:px-6 py-10 text-white">
-			<h1 class=" text-4xl font-semibold">Últimes <span class=" text-redAlert">Notícies</span></h1>
+			<h2 class=" text-4xl font-semibold">Últimes <span class=" text-redAlert">Notícies</span></h2>
 			<FeedNoticias client:load news={news}></FeedNoticias>
 		</section>
-		<div class="mx-auto container px-4 py-10 lg:px-6">
-			<h1 class=" text-4xl font-semibold text-white">Últims <span class=" text-redAlert">Vídeos</span></h1>
+		<div class="mx-auto container px-4 lg:px-6">
+			<h2 class=" text-4xl font-semibold text-white">Últims <span class=" text-redAlert">Vídeos</span></h2>
 			<div class="conatiner flex gap-10 mx-auto flex-wrap mt-10 mb-10 px-4 lg:px-6">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/bEcLB7OD9oU?si=DWYkzDhxnwQyjLCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/ORGOZuem6r0?si=gDJ9MERIESugZ3zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>
+	<section class="container mx-auto px-4 lg:px-6 py-16">
+		<div class="flex justify-center items-top gap-2 w-full">
+			<div class=" w-1/3">
+				<h2 class=" text-4xl font-semibold mb-5">Qui <span class=" text-redAlert">Som?</span></h2>
+				<p>L’any 2015 neix el Club Bàsquet Rosella derivat de la desvinculació amb l’escola Rosella. Som un petit club de poble amb el clar objectiu d’ensenyar el bàsquet i tots els valors que l’envolten. Estem a Viladecavalls i a Vacarisses amb equips des de Baby (P4-P5) fins a Júnior (17-18 anys)</p>
+				<div class="flex justify-between gap-5 pt-5">
+					<button class="px-2 py-2 text-base rounded-lg bg-redAlert text-white hover:scale-110 hover:-translate-y-1 duration-200 hover:bg-white hover:text-redAlert border-redAlert border">Els nostres Equips</button>
+					<button class="px-2 py-2 text-base rounded-lg bg-redAlert text-white hover:scale-110 hover:-translate-y-1 duration-200 hover:bg-white hover:text-redAlert border-redAlert border">El nostre 3x3</button>
+					<button class="px-2 py-2 text-base rounded-lg bg-redAlert text-white hover:scale-110 hover:-translate-y-1 duration-200 hover:bg-white hover:text-redAlert border-redAlert border">El Campus d'estiu</button>
+
+
+				</div>
+			</div>
+			<div class="w-2/3 flex justify-center">
+				<Image loading={'eager'} src={QuiSom} class="rounded-xl drop-shadow-lg shadow-lg " alt={"Cartell de benvinguda a la web"} height={350}/>{console.log(news)}
+			</div>
+		</div>
+	</section>
+	<div class="slider container">
+		<div class="slide-track">
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+		</div>
+	</div>
 </Layout>
 
 <style>
 	
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
 </style>
