@@ -12,7 +12,7 @@ console.log(news.toString());
 ---
 
 <Layout title="CB Rosella - Inici">
-	<div class="flex justify-center cartell w-screen mx-auto px-4 lg:px-6 py-16">
+	<div class="flex justify-center cartell mx-auto px-4 lg:px-6 py-16">
 		<Image loading={'eager'} src={CartellBenvinguda} alt={"Cartell de benvinguda a la web"} height={600}/>{console.log(news)}
 	</div>
 	<section class="container mx-auto px-4 lg:px-6">
@@ -24,7 +24,7 @@ console.log(news.toString());
 			<h2 class=" text-4xl font-semibold">Últimes <span class=" text-redAlert">Notícies</span></h2>
 			<FeedNoticias client:load news={news}></FeedNoticias>
 		</section>
-		<div class="mx-auto container px-4 lg:px-6">
+		<div class="mx-auto container px-4 lg:px-6 max-w-none format lg:format-lg format-red">
 			<h2 class=" text-4xl font-semibold text-white">Últims <span class=" text-redAlert">Vídeos</span></h2>
 			<div class="conatiner flex gap-10 mx-auto flex-wrap mt-10 mb-10 px-4 lg:px-6">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/bEcLB7OD9oU?si=DWYkzDhxnwQyjLCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

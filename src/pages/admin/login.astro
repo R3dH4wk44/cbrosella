@@ -1,0 +1,10 @@
+---
+import LoginComponent from '../../components/LoginComponent.jsx';
+import LogoRosella from '../../img/logoRosella.png'; 
+import Image from 'astro/components/Image.astro';
+---
+
+
+<LoginComponent client:load >
+    <Image src={LogoRosella} loading={'eager'} alt="Logo" class=' w-16 h-16 mr-2' />
+</LoginComponent>
